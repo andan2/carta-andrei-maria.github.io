@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="/Imagenes/Maria-teamlabs-favicon.png">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Regalo para Maria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/waltograph"/>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- FontAwesome para el icono de play -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <div class="text-center">
+            <h1 class="texto-contenedor-carta titulo-mas-negrita-carta text-3xl font-semibold mb-6">
+                Y aquí está la súper mega producción 🍿📽️
+            </h1>
+            <div class="texto-contenedor">
+                <div class="video-container" onclick="playVideo(this)">
+                    <img class="video-thumbnail" src="/Imagenes/personajes-version-disney-7.png" alt="Miniatura" />
+                    <i class="fas fa-play-circle play-icon"></i> <!-- Icono de play -->
+                    <video controls style="width: 100%; display: none;">
+                        <source src="/Video/andreidigital.mp4" type="video/mp4">
+                        Tu navegador no soporta videos HTML5.
+                    </video>
+                </div>            
+            <p class="mt-5 mb-6 texto-izquierda">Y sí, <strong>tenías razón:</strong> puede que yo no te conozca casi nada al igual que tú. Puede que el perfil que he creado en mi cabeza sea solo una fantasía. Por eso me encantaría quedar algún día contigo y hacer una videollamada para ver cómo va todo. Es una decisión tuya, y te pido perdón por tal vez estar forzándote a tomar una decisión. Sea lo que sea, en caso de que te haya gustado todo esto, quiero decirte que no mereces menos.</p>
+            <div>
+                <a href="https://calendly.com/andrei-danciulescu/silver-linings-playbook" class="button py-2 px-4 rounded mt-15 mb-6">¿Agendar una videollamada?</a>
+            </div>   
+            <p class="mb-6 texto-izquierda"><strong>Postdata:</strong> Me hubiera encantado preguntártelo antes, pero, en caso de que te hayas examinado del examen de inglés, ¿has aprobado? Estoy seguro de que lo has hecho.</p>
+            <img src="Imagenes/los_simpsons_bart.gif" alt="no te obsesiones por los titulos sino por aprender" class="mb-6">
+            <p class="mb-6 texto-izquierda">Y... antes de acabar, me gustaría añadir un slide con algunas fotos de recuerdo. Si ves esta nueva versión, no te preocupes; el proyecto está en privado, así que solo tú podrás ver las fotos.</p>
+            <div class="slider-wrapper">
+                <div class="slider">
+                  <!-- Agregar imágenes aquí -->
+                  <img src="Japon/IMG_20230522_182053.jpg" id="slide1" alt="la bella y la bestia">
+                  <img src="Japon/PXL_20230522_120941958.jpg" id="slide2" alt="las fotos espontáneas a veces son las mejores">
+                  <img src="Japon/IMG_20230522_182122.jpg" id="slide3" alt="bravo por el turista que nos sacó una foto">
+                  <img src="Japon/PXL_20230521_120417448.jpg" id="slide4" alt="explosión de cabeza">
+                  <img src="Japon/PXL_20230521_123211665.jpg" id="slide5" alt="diversión">
+                </div>
+                <div class="slider-nav">
+                  <a href="#slide1"></a>
+                  <a href="#slide2"></a>
+                  <a href="#slide3"></a>
+                  <a href="#slide4"></a>
+                  <a href="#slide5"></a>
+                </div>
+              </div>         
+            <p class="mt-5 mb-6 texto-izquierda">Ahora sí que sí, me despido.</p>
+            <img src="Imagenes/arcoiris.gif" alt="hasta la proxima!!" class="mb-6">
+            </div>
+        </div>
+        <div>
+            <a class="button py-2 px-4 rounded mt-15 mb-6">Volver al portfolio de proyectos</a>
+        </div>   
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

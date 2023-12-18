@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="/Imagenes/Maria-teamlabs-favicon.png">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Carta para Maria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/waltograph"/>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel="stylesheet"/>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col min-h-screen">
+        <div class="text-center m-auto">
+            <h1 class="titulo-mas-negrita mb-6">
+                ¡Carta para Maria!
+            </h1>
+            <h2 class="text-4xl font-bold mb-6">📧🏰</h2>
+            <div class="texto-contenedor">
+            <p class="mb-6">
+                Antes de continuar, ¡espera un momento! <strong>¡sube el volumen,</strong>
+                <strong>pero no mucho!</strong>
+            </p>
+            <p class="mb-6">
+                ¡Espero que te guste!
+            </p>
+            </div>
+            <div class="text-7xl text-center">🎁</div>
+            <div>
+                <a id="botonSorpresa" class="button py-2 px-4 rounded mt-20">Regalo Sorpresa</a>
+            </div>    
+            <div class="py-2 px-4 rounded mt-20" id="contenedorRegalo">
+                <!-- Contenedor para regalo.html -->
+            </div>
+            <div class="py-2 px-4 rounded mt-20" id="contenedorBroma">
+                <!-- Contenedor para broma.html -->
+            </div>
+            <div class="py-2 px-4 rounded mt-20" id="contenedorCarta">
+                <!-- Contenedor para carta.html -->
+            </div>
+            <div class="py-2 px-4 rounded mt-20" id="contenedorFinal">
+                <!-- Contenedor para carta.html -->
+            </div>
+        </div>
+        <audio id="audioSorpresa" src="Audios/public_audio_applause1.mp3"></audio>
+        <audio id="audioBroma" src="Audios/risas.mp3"></audio>
+        <audio id="audioCarta" src="Audios/disney.mp3"></audio>        
+        <footer class="text-center footer mt-7">
+            Hecho con ❤️ por Andrei
+        </footer>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
